@@ -14,9 +14,9 @@ function createMatch(player1, hour, player2) {
   `
 }
 
-let delay = -0.4;
+let delay = -0.4
 function createCard(date, day, match) {
-  delay = delay + 0.4;
+  delay = delay + 0.4
   return `
     <div class="card" style="animation-delay: ${delay}s">
       <div class="date">

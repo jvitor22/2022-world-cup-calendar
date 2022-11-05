@@ -30,7 +30,7 @@ body {
   background-image: var(--bg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: 100%;
 
   font-family: "Roboto", sans-serif;
 }
@@ -119,6 +119,21 @@ header {
 .date:hover, .matches ul li img:hover, .matches ul li p:hover {
   transform: scale(1.1);
 } 
+
+footer {
+  text-align: center;
+  margin: 50px auto;
+  color: white;
+}
+
+footer a {
+  text-decoration: none;
+  color: #F7DD43;
+}
+
+footer a:hover {
+  border-bottom: 1px solid #F7DD43;
+}
 
 @keyframes appear {
   0% {
