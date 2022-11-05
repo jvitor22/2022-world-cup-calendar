@@ -1,0 +1,147 @@
+:root {
+  --borderColor: #F7DD43;
+  --dateBorderColor: #746615;
+  --cardBgColor: #1D1C19;
+  --bg: url(../assets/yeloow-bg-body.svg);
+}
+
+body.blue {
+  --borderColor: #338AF3;
+  --dateBorderColor: #338AF3;
+  --cardBgColor: #202024 ;
+  --bg: url(../assets/blue-bg-body.svg);
+}
+
+body.green{
+  --borderColor: #047C3F;
+  --dateBorderColor: #047C3F;
+  --cardBgColor: #1A1F1B;
+  --bg: url(../assets/green-bg-body.svg);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121214;
+  background-image: var(--bg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+#app {
+  width: fit-content;
+  margin: 52px auto;
+}
+
+header {
+  margin-bottom: 63px;
+  text-align: center;
+}
+
+#cards {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.card {
+  padding: 32px 23px;
+  background-color: var(--cardBgColor);
+  text-align: center; 
+  border-bottom: 2px solid var(--borderColor);
+  border-radius: 6px;
+
+  animation: appear 0.7s;
+}
+
+.date {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  
+  margin: 0 auto 53px;
+  padding: 14px 16px;
+  width: fit-content;
+  border: 1px solid var(--dateBorderColor);
+  border-radius: 6px;
+}
+
+.date h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #F7DD43;
+}
+
+.date p {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  color: #e1e1e6;
+}
+
+.matches ul {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.matches ul li{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 45px;
+  color: #e1e1e6;
+}
+
+.matches ul li + li {
+  border-top: 1px solid #323238;
+  padding-top: 24px;  
+}
+
+.date, .matches ul li img, .matches ul li p {
+  transition: 0.4s;
+}
+
+.date:hover, .matches ul li img:hover, .matches ul li p:hover {
+  transform: scale(1.1);
+} 
+
+@keyframes appear {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 700px) {
+  #cards {
+    max-width: 670px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1000px) {
+  #cards {
+    max-width: 980px;
+   }
+}
