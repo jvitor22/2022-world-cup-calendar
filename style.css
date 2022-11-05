@@ -1,21 +1,21 @@
 :root {
-  --borderColor: #F7DD43;
+  --borderColor: #f7dd43;
   --dateBorderColor: #746615;
-  --cardBgColor: #1D1C19;
+  --cardBgColor: #1d1c19;
   --bg: url(../assets/yeloow-bg-body.svg);
 }
 
 body.blue {
-  --borderColor: #338AF3;
-  --dateBorderColor: #338AF3;
-  --cardBgColor: #202024 ;
+  --borderColor: #338af3;
+  --dateBorderColor: #338af3;
+  --cardBgColor: #202024;
   --bg: url(../assets/blue-bg-body.svg);
 }
 
-body.green{
-  --borderColor: #047C3F;
-  --dateBorderColor: #047C3F;
-  --cardBgColor: #1A1F1B;
+body.green {
+  --borderColor: #047c3f;
+  --dateBorderColor: #047c3f;
+  --cardBgColor: #1a1f1b;
   --bg: url(../assets/green-bg-body.svg);
 }
 
@@ -57,7 +57,7 @@ header {
 .card {
   padding: 32px 23px;
   background-color: var(--cardBgColor);
-  text-align: center; 
+  text-align: center;
   border-bottom: 2px solid var(--borderColor);
   border-radius: 6px;
 
@@ -68,7 +68,7 @@ header {
   display: flex;
   gap: 16px;
   align-items: center;
-  
+
   margin: 0 auto 53px;
   padding: 14px 16px;
   width: fit-content;
@@ -80,7 +80,7 @@ header {
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
-  color: #F7DD43;
+  color: #f7dd43;
 }
 
 .date p {
@@ -97,7 +97,7 @@ header {
   gap: 24px;
 }
 
-.matches ul li{
+.matches ul li {
   display: flex;
   gap: 30px;
   align-items: center;
@@ -109,16 +109,20 @@ header {
 
 .matches ul li + li {
   border-top: 1px solid #323238;
-  padding-top: 24px;  
+  padding-top: 24px;
 }
 
-.date, .matches ul li img, .matches ul li p {
+.date,
+.matches ul li img,
+.matches ul li p {
   transition: 0.4s;
 }
 
-.date:hover, .matches ul li img:hover, .matches ul li p:hover {
+.date:hover,
+.matches ul li img:hover,
+.matches ul li p:hover {
   transform: scale(1.1);
-} 
+}
 
 footer {
   text-align: center;
@@ -128,11 +132,11 @@ footer {
 
 footer a {
   text-decoration: none;
-  color: #F7DD43;
+  color: #f7dd43;
 }
 
 footer a:hover {
-  border-bottom: 1px solid #F7DD43;
+  border-bottom: 1px solid #f7dd43;
 }
 
 @keyframes appear {
@@ -158,5 +162,5 @@ footer a:hover {
 @media (min-width: 1000px) {
   #cards {
     max-width: 980px;
-   }
+  }
 }
