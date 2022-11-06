@@ -2,21 +2,21 @@
   --borderColor: #f7dd43;
   --dateBorderColor: #746615;
   --cardBgColor: #1d1c19;
-  --bg: url(../assets/yeloow-bg-body.svg);
+  --bg: url(./assets/yeloow-bg-body.svg);
 }
 
 body.blue {
   --borderColor: #338af3;
   --dateBorderColor: #338af3;
   --cardBgColor: #202024;
-  --bg: url(../assets/blue-bg-body.svg);
+  --bg: url(./assets/blue-bg-body.svg);
 }
 
 body.green {
   --borderColor: #047c3f;
   --dateBorderColor: #047c3f;
   --cardBgColor: #1a1f1b;
-  --bg: url(../assets/green-bg-body.svg);
+  --bg: url(./assets/green-bg-body.svg);
 }
 
 * {
@@ -30,7 +30,7 @@ body {
   background-image: var(--bg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
 
   font-family: "Roboto", sans-serif;
 }
@@ -49,6 +49,10 @@ header {
   text-align: center;
 }
 
+header img {
+  width: 150px;
+}
+
 #cards {
   display: flex;
   flex-direction: column;
@@ -60,6 +64,8 @@ header {
   text-align: center;
   border-bottom: 2px solid var(--borderColor);
   border-radius: 6px;
+  width: fit-content;
+  margin: 0 auto;
 
   animation: appear 0.7s;
 }
